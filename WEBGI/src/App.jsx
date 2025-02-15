@@ -4,11 +4,12 @@ import SplashCursor
  from "./components/SplashCursor";
 const HomePage = () => {
   return (
-
-    <div className="flex h-screen items-center justify-center bg-gray-900 text-white ">
-      <h1 className="text-5xl font-bold">Welcome to WebGi</h1>
+    <div>
+  <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <h1 className="text-5xl font-bold text-white flex justify-center ">Welcome to WebGi</h1>
     </div>
 
+    
   );
 };
 
