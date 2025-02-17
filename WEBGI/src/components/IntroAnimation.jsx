@@ -97,7 +97,7 @@ const IntroAnimation = ({ onComplete }) => {
 
       {/* Web Global Innovation & Services with Gradient Text */}
       <motion.div
-  className="text-4xl font-bold mt-4 flex space-x-2"
+  className="text-4xl font-serif mt-4 flex space-x-2"
   initial="hidden"
   animate="visible"
   variants={{
@@ -109,7 +109,7 @@ const IntroAnimation = ({ onComplete }) => {
     },
   }}
 >
-  {Array.from("Web Global Innovation & Services").map((char, index) => (
+  {Array.from("Web  Global  Innovation  &  Services").map((char, index) => (
     <motion.span
       key={index}
       variants={{

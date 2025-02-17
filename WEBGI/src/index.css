@@ -9,11 +9,7 @@ body {
   font-style: normal;
 }
 
-@layer components{
-  .sub-menu {
 
-  }
-}
 
 @layer utilities{
   .flex-center{
@@ -23,4 +19,12 @@ body {
     @apply flex items-center justify-between;
   }
 }
+
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-gradient-to-r from-blue-500 to-indigo-500;
+  }
+}
+
 
