@@ -2,7 +2,7 @@ import Logo from "./assets/Logo1.png"
 import { useState } from "react";
 import IntroAnimation from "./components/IntroAnimation";
 import  {Menus} from "./utils"
-import SplashCursor from "./components/SplashCursor";
+// import SplashCursor from "./components/SplashCursor";
 import DesktopMenu from "./components/DesktopMenu";
 import MobMenu from "./components/MobMenu";
 

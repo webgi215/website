@@ -97,7 +97,7 @@ const IntroAnimation = ({ onComplete }) => {
 
       {/* Web Global Innovation & Services with Gradient Text */}
       <motion.div
-  className="text-4xl font-serif mt-4 flex space-x-2"
+  className="text-2xl sm:text-3xl md:text-4xl font-serif mt-2 sm:mt-4 flex space-x-1 sm:space-x-2"
   initial="hidden"
   animate="visible"
   variants={{
