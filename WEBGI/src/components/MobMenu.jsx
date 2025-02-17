@@ -60,7 +60,7 @@ export default function MobMenu({ Menus }) {
       )}
 
       <motion.div
-        className="fixed left-0 top-0 w-64 h-full bg-[#18181A] text-white p-6 pb-20 z-[999] shadow-lg"
+        className="fixed left-0 top-0 w-3/4 h-full bg-[#18181A] text-white p-6 pb-20 z-[999] shadow-lg"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
