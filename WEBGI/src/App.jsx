@@ -5,11 +5,12 @@ import  {Menus} from "./utils"
 // import SplashCursor from "./components/SplashCursor";
 import DesktopMenu from "./components/DesktopMenu";
 import MobMenu from "./components/MobMenu";
+import CustomCursor from "./shared/customCursor";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      {/* <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       
 
       <header className="fixed top-0 left-0 right-0 h-16 bg-[#18181A] flex items-center z-50">
@@ -57,6 +58,7 @@ function App() {
     <IntroAnimation onComplete={() => setShowIntro(false)} />
   ) : (
     <>
+    <CustomCursor />
       {/* <SplashCursor /> */}
       <HomePage />
     </>
