@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 export default function MobMenu({ Menus }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
-  
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
@@ -29,7 +29,10 @@ export default function MobMenu({ Menus }) {
   return (
     <div>
       {/* Animated Menu Button */}
-      <button className="lg:hidden z-[999] relative w-10 h-10 flex flex-col justify-center items-center" onClick={toggleDrawer}>
+      <button
+        className="lg:hidden z-[999] relative w-10 h-10 flex flex-col justify-center items-center"
+        onClick={toggleDrawer}
+      >
         <motion.span
           className="bg-white w-6 h-0.5 rounded block"
           animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6 : 0 }}
@@ -96,7 +99,10 @@ export default function MobMenu({ Menus }) {
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
-                        <Icon size={17} className="text-white hover:text-gray-300" />
+                        <Icon
+                          size={17}
+                          className="text-white hover:text-gray-300"
+                        />
                         {name}
                       </li>
                     ))}

@@ -46,38 +46,37 @@ const IntroAnimation = ({ onComplete }) => {
 
       {/* WebGi Logo - Positioned at the Top */}
       <motion.div className="p-[2px] bg-gradient-to-r from-red-500 to-red-700 rounded-full mb-4">
-  <motion.img
-    src={logo}
-    alt="WebGi Logo"
-    className="w-20 h-20 rounded-full bg-black p-1 drop-shadow-lg"
-    initial={{ opacity: 0, y: -100, scale: 0.5, rotate: -10 }} // Starts above
-    animate={{
-      opacity: 1,
-      y: [0, -10], // Moves slightly up and down
-      scale: 1.1,
-      rotate: 0,
-    }}
-    transition={{
-      duration: 0.8,
-      ease: "easeInOut",
-      repeat: Infinity, // Makes it bounce forever
-      repeatType: "reverse", // Smooth up-down bounce
-    }}
-    whileHover={{
-      scale: 1.2,
-      rotate: 5,
-      transition: { duration: 1 },
-    }}
-    exit={{
-      opacity: 0,
-      scale: 0.5,
-      rotate: -10,
-      y: -100, // Moves back up on exit
-      transition: { duration: 0.5 },
-    }}
-  />
-</motion.div>
-
+        <motion.img
+          src={logo}
+          alt="WebGi Logo"
+          className="w-20 h-20 rounded-full bg-black p-1 drop-shadow-lg"
+          initial={{ opacity: 0, y: -100, scale: 0.5, rotate: -10 }} // Starts above
+          animate={{
+            opacity: 1,
+            y: [0, -10], // Moves slightly up and down
+            scale: 1.1,
+            rotate: 0,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+            repeat: Infinity, // Makes it bounce forever
+            repeatType: "reverse", // Smooth up-down bounce
+          }}
+          whileHover={{
+            scale: 1.2,
+            rotate: 5,
+            transition: { duration: 1 },
+          }}
+          exit={{
+            opacity: 0,
+            scale: 0.5,
+            rotate: -10,
+            y: -100, // Moves back up on exit
+            transition: { duration: 0.5 },
+          }}
+        />
+      </motion.div>
 
       {/* WebGi Text with Animated Red-Black Gradient */}
       <motion.div className="animated-bg text-6xl font-bold p-6 border-4 border-transparent text-black rounded-xl">
@@ -97,38 +96,40 @@ const IntroAnimation = ({ onComplete }) => {
 
       {/* Web Global Innovation & Services with Gradient Text */}
       <motion.div
-  className="text-2xl sm:text-3xl md:text-4xl font-serif mt-2 sm:mt-4 flex space-x-1 sm:space-x-2"
-  initial="hidden"
-  animate="visible"
-  variants={{
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1, // Delay each letter by 0.1s
-      },
-    },
-  }}
->
-  {Array.from("Web  Global  Innovation  &  Services").map((char, index) => (
-    <motion.span
-      key={index}
-      variants={{
-        hidden: { opacity: 0, y: 20 }, // Start invisible and lower
-        visible: { opacity: 1, y: 0 }, // Appear smoothly
-      }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      <GradientText
-        colors={["#ff4040", "#ff7940", "#ff4040", "#ff7940", "#ff4040"]}
-        animationSpeed={3}
-        showBorder={false}
-        className="custom-class"
+        className="text-2xl sm:text-3xl md:text-4xl font-serif mt-2 sm:mt-4 flex space-x-1 sm:space-x-2"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.1, // Delay each letter by 0.1s
+            },
+          },
+        }}
       >
-        {char}
-      </GradientText>
-    </motion.span>
-  ))}
-</motion.div>
+        {Array.from("Web  Global  Innovation  &  Services").map(
+          (char, index) => (
+            <motion.span
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 20 }, // Start invisible and lower
+                visible: { opacity: 1, y: 0 }, // Appear smoothly
+              }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <GradientText
+                colors={["#ff4040", "#ff7940", "#ff4040", "#ff7940", "#ff4040"]}
+                animationSpeed={3}
+                showBorder={false}
+                className="custom-class"
+              >
+                {char}
+              </GradientText>
+            </motion.span>
+          )
+        )}
+      </motion.div>
     </motion.div>
   );
 };
