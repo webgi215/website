@@ -4,7 +4,7 @@ const BlobBackground = () => {
   return (
     <div className="absolute inset-0 -z-10 overflow-hidden">
       <motion.div
-        className="absolute w-[600px] h-[600px] bg-purple-500 opacity-30 blur-3xl rounded-full"
+         className="absolute w-[500px] h-[500px] bg-violet-500 opacity-20 blur-3xl rounded-full"
         animate={{
           x: [0, 100, -100, 0],
           y: [0, -100, 100, 0],
@@ -18,7 +18,7 @@ const BlobBackground = () => {
         style={{ left: "-200px", top: "-200px" }}
       />
       <motion.div
-        className="absolute w-[500px] h-[500px] bg-pink-500 opacity-20 blur-3xl rounded-full"
+        className="absolute w-[500px] h-[500px] bg-violet-500 opacity-20 blur-3xl rounded-full"
         animate={{
           x: [0, -120, 120, 0],
           y: [0, 100, -100, 0],

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import IntroAnimation from "./components/IntroAnimation";
 import CustomCursor from "./shared/customCursor"; // ✅ Keep this
-import HomePage from "./Pages/HomePage"; // ✅ Keep your version
+import HomePage from "./Pages/Homepage"; // ✅ Keep your version
+import Layout from "./components/Layout"; // ✅ Keep your version
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -10,8 +11,11 @@ function App() {
     <IntroAnimation onComplete={() => setShowIntro(false)} />
   ) : (
     <>
-      <CustomCursor /> {/* ✅ Use CustomCursor */}
+       {/* ✅ Use CustomCursor */}
+      <Layout>
+      <CustomCursor />
       <HomePage />
+    </Layout>
     </>
   );
 }

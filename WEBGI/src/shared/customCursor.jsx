@@ -70,7 +70,7 @@ const CustomCursor = () => {
       <>
         {/* Inner cursor - Dark Green */}
         <motion.div
-          className="bg-green-700"
+          className="bg-purple-700"
           style={{
             x: springXInner,
             y: springYInner,
@@ -86,7 +86,7 @@ const CustomCursor = () => {
         />
         {/* Outer ring - Dark Green Border */}
         <motion.div
-          className="border border-green-700"
+          className="border border-white"
           style={{
             x: springXOuter,
             y: springYOuter,

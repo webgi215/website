@@ -36,7 +36,7 @@ const fadeUp = {
 
 const WebGIContent = () => {
   return (
-    <div className="relative min-h-screen px-4 py-24 sm:px-10 lg:px-24 bg-[#0a0a0a] text-white overflow-hidden">
+    <div className="relative min-h-screen px-4 py-24 sm:px-10 lg:px-24  text-white overflow-hidden">
       <BlobBackground />
 
       <motion.h2
