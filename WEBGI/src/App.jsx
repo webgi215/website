@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IntroAnimation from "./components/IntroAnimation";
-import SplashCursor from "./components/SplashCursor";
-import HomePage from "./Pages/HomePage"; // ✅ Import new homepage
+import CustomCursor from "./shared/customCursor"; // ✅ Keep this
+import HomePage from "./Pages/HomePage"; // ✅ Keep your version
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -10,7 +10,7 @@ function App() {
     <IntroAnimation onComplete={() => setShowIntro(false)} />
   ) : (
     <>
-      <SplashCursor />
+      <CustomCursor /> {/* ✅ Use CustomCursor */}
       <HomePage />
     </>
   );
